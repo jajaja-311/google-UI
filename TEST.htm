@@ -1,0 +1,94 @@
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #logo {
+            font-size: 48px;
+            color: #4285f4;
+            margin-bottom: 20px;
+        }
+        .s-box {
+	width: 580px;
+	margin: 0px auto;
+	position: relative;
+	margin-top: -8px;
+	text-align: center;
+}
+.s-box .s-input {
+	display: block;
+	border: 1px solid #ddd;
+	color: rgba(0,0,0, 0.87);
+	font-size: 16px;
+	padding: 13px;
+	padding-left: 45px;
+	border-radius: 25px;
+	width: 100%;
+	transition: box-shadow 100ms;
+	outline: none;
+}
+.s-box .s-input:hover {
+	border: 1px solid #fff;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.05), 
+				0 0 2px rgba(0, 0, 0, 0.05),
+				0 0 3px rgba(0, 0, 0, 0.05),
+				0 0 4px rgba(0, 0, 0, 0.05), 
+				0 0 5px rgba(0, 0, 0, 0.05), 
+				0 0 4px rgba(0, 0, 0, 0.05), 
+				0 0 5px rgba(0, 0, 0, 0.05)
+}
+.s-box .search {
+	width: 20px;
+	opacity: .4;
+	position: absolute;
+	top: 13px;
+	left: 14px;
+}
+        .s-ok {
+	border: 1px solid transparent;
+	padding: 9px 15px;
+	color: #666;
+	font-size: 14px;
+	border-radius: 4px;
+	display: inline-block;
+	margin-right: 10px;
+	margin-top: 28px;
+	outline: none;
+	cursor: pointer;
+	transition: border-color 100ms;
+}
+
+
+        #footer {
+            font-size: 14px;
+            color: #888;
+            margin-top: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="logo">Google</div>
+    <div class="s-box">
+        <img src="img/search.svg" class="search">
+        <input type="text" class="s-input" >
+        <input type="submit" class="s-ok" value="Google Search">
+        <input type="submit" class="s-ok" value="I'm feeling lucky">
+    </div>
+    <div id="footer">
+        <span style="margin-right: -80px;"></span> <a href="#">About</a><span style="margin-right: 25px;"></span><a href="#">Advertising</a><span style="margin-right: 25px;"></span>  <a href="#">Business</a> <span style="margin-right: 25px;"></span>
+        <a href="#">How Search works</a> <span style="margin-right: 200px;"></span> <a href="#">Privacy</a><span style="margin-right: 25px;"></span>  <a href="#">Terms</a> <span style="margin-right: 25px;"></span> <a href="#">Settings</a>
+    </div>
+</body>
+</html>
